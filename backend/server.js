@@ -7,7 +7,6 @@ import { notfound, errorHandler } from './middleware/errorMiddleware.js'
 import connectDB from './config/db.js'
 import cookieParser from 'cookie-parser'
 import cors from 'cors'
-import path from 'path'
 
 connectDB()
 
