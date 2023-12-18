@@ -8,6 +8,6 @@ router.post('/auth', authUser)
 router.post('/logout', logoutUser)
 router.route('/profile').get(protect, getUserProfile).put(protect, updateUserProfile)
 router.post('/order', protect, createOrder)
-router.post('/getOrders', getOrders)
+router.post('/getOrders', protect, getOrders)
 
 export default router
