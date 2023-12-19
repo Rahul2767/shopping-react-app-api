@@ -8,7 +8,8 @@ const generateToken = (res, userId) => {
         httpOnly: true,
         secure: true,
         sameSite: 'none',
-        maxAge: 1 * 24 * 60 * 60 * 1000
+        maxAge: 1 * 24 * 60 * 60 * 1000,
+        domain : "https://shopping-react-app-qx7r.vercel.app"
     })
 }
 
