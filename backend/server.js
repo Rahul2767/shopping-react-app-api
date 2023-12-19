@@ -13,7 +13,7 @@ connectDB()
 const app = express();
 app.use(cors({
     credentials: true,
-    origin: 'https://shopping-react-app-qx7r.vercel.app',
+    origin: '*',
 }))
 app.use(express.json())
 app.use(urlencoded({ extended: true }))
