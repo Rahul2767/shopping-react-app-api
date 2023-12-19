@@ -12,6 +12,7 @@
       "dest": "backend/server.js"
     }
   ],
+  
   "headers": [
     {
       "source": "/api/(.*)",
