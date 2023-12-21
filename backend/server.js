@@ -6,15 +6,11 @@ import userRoutes from './routes/userRoutes.js'
 import { notfound, errorHandler } from './middleware/errorMiddleware.js'
 import connectDB from './config/db.js'
 import cookieParser from 'cookie-parser'
-import cors from 'cors'
 
 connectDB()
 
 const app = express();
-app.use(cors({
-    credentials: true,
-    origin: ['https://fakeflipkart.onrender.com', 'http://localhost:3000'],
-}))
+
 app.use(express.json())
 app.use(urlencoded({ extended: true }))
 
