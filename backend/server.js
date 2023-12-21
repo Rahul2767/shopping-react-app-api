@@ -13,7 +13,7 @@ connectDB()
 const app = express();
 app.use(cors({
     credentials: true,
-    origin: 'https://fakeflipkart.onrender.com',
+    origin: ['https://fakeflipkart.onrender.com', 'http://localhost:3000'],
 }))
 app.use(express.json())
 app.use(urlencoded({ extended: true }))
