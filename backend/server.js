@@ -13,8 +13,9 @@ const app = express();
 
 app.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', 'https://fakeflipkart.onrender.com');
+    res.header('Access-Control-Allow-Credentials', 'true');
     next();
-})
+});
 
 app.use(express.json())
 app.use(urlencoded({ extended: true }))
