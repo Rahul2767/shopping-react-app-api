@@ -13,7 +13,7 @@ connectDB()
 const app = express();
 app.use(cors({
     credentials: true,
-    origin: 'https://shopping-react-app-frontend.onrender.com',
+    origin: 'https://fakeflipkart.onrender.com/',
 }))
 app.use(express.json())
 app.use(urlencoded({ extended: true }))
