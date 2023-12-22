@@ -6,7 +6,7 @@ import userRoutes from './routes/userRoutes.js'
 import { notfound, errorHandler } from './middleware/errorMiddleware.js'
 import connectDB from './config/db.js'
 import cookieParser from 'cookie-parser'
-const data = require('../data.json')
+import data from './data.json' with {type: 'json'};
 
 connectDB()
 
